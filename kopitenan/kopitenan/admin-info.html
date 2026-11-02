@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Kedai | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="admin-info">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="admin-dashboard.html" class="logo">Kopi Tenan <small>admin</small></a>
+      <nav>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-menu.html">Menu</a>
+        <a href="admin-pesanan.html">Pesanan</a>
+        <a href="admin-laporan.html">Laporan</a>
+        <a href="admin-info.html" class="aktif">Info</a>
+        <a href="#" id="keluar">Keluar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Promo dan Informasi</h1>
+
+    <div class="dua-kolom">
+      <form id="form-info" class="panel">
+        <h2>Info kedai</h2>
+        <label>Teks promo
+          <input type="text" name="promo">
+        </label>
+        <label>Jam buka
+          <input type="text" name="jam">
+        </label>
+        <label>Alamat
+          <input type="text" name="alamat">
+        </label>
+        <label>Nomor WhatsApp (awali 62, tanpa +)
+          <input type="text" name="wa">
+        </label>
+        <label>Username Instagram
+          <input type="text" name="instagram">
+        </label>
+        <button type="submit" class="tombol">Simpan</button>
+      </form>
+
+      <form id="form-sandi" class="panel">
+        <h2>Ganti kata sandi</h2>
+        <label>Kata sandi lama
+          <input type="password" name="sandi_lama" required>
+        </label>
+        <label>Kata sandi baru
+          <input type="password" name="sandi_baru" minlength="6" required>
+        </label>
+        <button type="submit" class="tombol">Ganti</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>Panel admin Kopi Tenan</span>
+      <a href="index.html">Lihat website</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

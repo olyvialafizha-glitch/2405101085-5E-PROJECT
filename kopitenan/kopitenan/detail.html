@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Menu | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="detail">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html" class="aktif">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="status.html">Cek Pesanan</a>
+        <a href="keranjang.html">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p><a href="menu.html">&larr; Kembali ke menu</a></p>
+
+    <section class="detail" id="detail-isi">
+      <div class="detail-foto" id="foto-detail"></div>
+      <div>
+        <span class="kategori" id="kategori-menu"></span>
+        <h1 id="nama-menu"></h1>
+        <p id="deskripsi-menu"></p>
+        <p class="harga-besar" id="harga-menu"></p>
+
+        <div id="blok-ukuran">
+          <label>Ukuran
+            <select id="ukuran">
+              <option value="Reguler">Reguler</option>
+              <option value="Besar">Besar (+Rp3.000)</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Jumlah
+          <input type="number" id="jumlah" min="1" value="1">
+        </label>
+
+        <button class="tombol" id="tombol-tambah">Masukkan ke keranjang</button>
+      </div>
+    </section>
+
+    <p id="detail-kosong" hidden>Menu tidak ditemukan. <a href="menu.html">Lihat daftar menu</a>.</p>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

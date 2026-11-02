@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="checkout">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="status.html">Cek Pesanan</a>
+        <a href="keranjang.html" class="aktif">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Checkout</h1>
+
+    <div class="checkout">
+      <form id="form-pesan" class="panel">
+        <label>Nama pemesan
+          <input type="text" name="nama" required>
+        </label>
+
+        <label>Nomor WhatsApp
+          <input type="tel" name="hp" placeholder="08xxxxxxxxxx" required>
+        </label>
+
+        <fieldset>
+          <legend>Pengambilan</legend>
+          <label class="pilihan"><input type="radio" name="pengambilan" value="Ambil di kasir" checked>Ambil di kasir</label>
+          <label class="pilihan"><input type="radio" name="pengambilan" value="Makan di tempat">Makan di tempat</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pembayaran</legend>
+          <label class="pilihan"><input type="radio" name="pembayaran" value="Bayar di kasir" checked>Bayar di kasir</label>
+          <label class="pilihan"><input type="radio" name="pembayaran" value="Transfer bank">Transfer bank</label>
+        </fieldset>
+
+        <p id="info-transfer" hidden>
+          Transfer ke BCA 1234567890 a.n. Kopi Tenan, lalu tunjukkan bukti transfer ke kasir.
+        </p>
+
+        <label>Catatan (boleh kosong)
+          <textarea name="catatan" rows="3" placeholder="Contoh: es dipisah, tidak pakai gula"></textarea>
+        </label>
+
+        <button type="submit" class="tombol">Konfirmasi pesanan</button>
+      </form>
+
+      <aside class="panel">
+        <h2>Ringkasan</h2>
+        <div id="ringkasan-item"></div>
+        <div class="baris-ringkas"><span>Subtotal</span><span id="co-subtotal"></span></div>
+        <div class="baris-ringkas"><span>Biaya layanan (5%)</span><span id="co-layanan"></span></div>
+        <div class="baris-ringkas total"><span>Total</span><span id="co-total"></span></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Pesanan | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="status">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="status.html" class="aktif">Cek Pesanan</a>
+        <a href="keranjang.html">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Cek Pesanan</h1>
+    <p>Masukkan nomor pesanan yang muncul setelah checkout (contoh: KT123456).</p>
+
+    <form method="get" action="status.html" class="panel" style="max-width:420px; margin-bottom:24px">
+      <label>Nomor pesanan
+        <input type="text" name="no" id="nomor" required>
+      </label>
+      <button type="submit" class="tombol">Cek</button>
+    </form>
+
+    <div id="hasil-status"></div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelola Menu | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="admin-menu">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="admin-dashboard.html" class="logo">Kopi Tenan <small>admin</small></a>
+      <nav>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-menu.html" class="aktif">Menu</a>
+        <a href="admin-pesanan.html">Pesanan</a>
+        <a href="admin-laporan.html">Laporan</a>
+        <a href="admin-info.html">Info</a>
+        <a href="#" id="keluar">Keluar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Kelola Menu</h1>
+
+    <form id="form-menu" class="panel" style="margin-bottom:28px">
+      <h2 id="judul-form">Tambah menu</h2>
+      <input type="hidden" name="id_menu" value="">
+
+      <label>Nama menu
+        <input type="text" name="nama" required>
+      </label>
+
+      <label>Kategori
+        <select name="kategori">
+          <option>Kopi</option>
+          <option>Non-Kopi</option>
+          <option>Makanan</option>
+          <option>Camilan</option>
+        </select>
+      </label>
+
+      <label>Harga (Rp)
+        <input type="number" name="harga" min="0" step="500" required>
+      </label>
+
+      <label>Foto (lokasi file, contoh: images/espresso.jpg)
+        <input type="text" name="foto">
+      </label>
+
+      <label>Deskripsi
+        <textarea name="deskripsi" rows="2"></textarea>
+      </label>
+
+      <label class="pilihan"><input type="checkbox" name="ukuran">Ada pilihan ukuran (Reguler / Besar)</label>
+      <label class="pilihan"><input type="checkbox" name="unggulan">Tampilkan di beranda</label>
+
+      <button type="submit" class="tombol">Simpan</button>
+      <button type="button" class="tombol-garis" id="batal-ubah">Batal</button>
+    </form>
+
+    <div class="tabel-bungkus">
+      <table>
+        <thead>
+          <tr><th>Menu</th><th>Kategori</th><th>Harga</th><th>Status</th><th>Aksi</th></tr>
+        </thead>
+        <tbody id="tabel-menu"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>Panel admin Kopi Tenan</span>
+      <a href="index.html">Lihat website</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

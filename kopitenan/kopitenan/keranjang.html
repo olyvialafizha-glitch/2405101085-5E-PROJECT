@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="keranjang">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="status.html">Cek Pesanan</a>
+        <a href="keranjang.html" class="aktif">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Keranjang</h1>
+
+    <div id="keranjang-isi">
+      <div class="tabel-bungkus">
+        <table>
+          <thead>
+            <tr>
+              <th>Menu</th>
+              <th>Ukuran</th>
+              <th>Harga</th>
+              <th>Jumlah</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="baris-keranjang"></tbody>
+        </table>
+      </div>
+
+      <div class="panel ringkasan">
+        <div class="baris-ringkas"><span>Subtotal</span><span id="k-subtotal"></span></div>
+        <div class="baris-ringkas"><span>Biaya layanan (5%)</span><span id="k-layanan"></span></div>
+        <div class="baris-ringkas total"><span>Total</span><span id="k-total"></span></div>
+        <p><a class="tombol" href="checkout.html">Lanjut ke checkout</a></p>
+        <a href="menu.html">Tambah menu lain</a>
+      </div>
+    </div>
+
+    <p id="keranjang-kosong" hidden>Keranjang masih kosong. <a href="menu.html">Pilih menu dulu</a>.</p>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

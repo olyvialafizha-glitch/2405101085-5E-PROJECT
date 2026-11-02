@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="index">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html" class="aktif">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="status.html">Cek Pesanan</a>
+        <a href="keranjang.html">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-teks">
+        <p class="kecil">Kedai kopi &middot; buka setiap hari</p>
+        <h1>Kopi Tenan</h1>
+        <p>Kopi, minuman susu, dan makanan ringan dengan harga yang masih masuk uang jajan. Pesan dari HP, tinggal ambil di kasir.</p>
+        <p class="promo" id="promo-teks"></p>
+        <div class="aksi">
+          <a class="tombol" href="menu.html">Lihat menu</a>
+          <a class="tombol-garis" href="tentang.html">Tentang kami</a>
+        </div>
+      </div>
+      <div class="kolase">
+        <img class="satu" src="images/suasana-bar.jpg" alt="Mesin espresso dan grinder di meja bar">
+        <img class="dua" src="images/espresso-tuang.jpg" alt="Espresso mengalir ke cangkir">
+      </div>
+    </section>
+
+    <section class="blok">
+      <div class="judul-blok">
+        <h2>Menu yang sering dipesan</h2>
+        <a href="menu.html">Semua menu</a>
+      </div>
+      <div class="grid-menu" id="menu-unggulan"></div>
+    </section>
+
+    <section class="dua-kolom">
+      <div class="panel">
+        <h2>Jam buka dan lokasi</h2>
+        <p><strong>Jam:</strong> <span id="jam-buka"></span></p>
+        <p><strong>Alamat:</strong> <span id="alamat"></span></p>
+        <p><a href="kontak.html">Kontak dan peta</a></p>
+      </div>
+      <div class="panel">
+        <h2>Cara pesan</h2>
+        <ol>
+          <li>Pilih menu lalu masukkan ke keranjang.</li>
+          <li>Isi nama dan nomor WhatsApp di halaman checkout.</li>
+          <li>Bayar di kasir atau transfer. Status pesanan bisa dicek di halaman Cek Pesanan.</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

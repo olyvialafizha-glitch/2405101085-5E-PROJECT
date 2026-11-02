@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan Penjualan | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="admin-laporan">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="admin-dashboard.html" class="logo">Kopi Tenan <small>admin</small></a>
+      <nav>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-menu.html">Menu</a>
+        <a href="admin-pesanan.html">Pesanan</a>
+        <a href="admin-laporan.html" class="aktif">Laporan</a>
+        <a href="admin-info.html">Info</a>
+        <a href="#" id="keluar">Keluar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Laporan Penjualan</h1>
+
+    <label style="max-width:240px">Periode
+      <select id="periode">
+        <option value="0">Semua</option>
+        <option value="1">Hari ini</option>
+        <option value="7">7 hari terakhir</option>
+        <option value="30">30 hari terakhir</option>
+      </select>
+    </label>
+
+    <div class="stat-grid">
+      <div class="stat"><span>Jumlah pesanan</span><strong id="stat-pesanan">0</strong></div>
+      <div class="stat"><span>Menunggu konfirmasi</span><strong id="stat-baru">0</strong></div>
+      <div class="stat"><span>Total penjualan</span><strong id="stat-omzet">Rp0</strong></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:24px">
+      <h2>Menu terlaris</h2>
+      <ol id="terlaris"></ol>
+    </div>
+
+    <h2>Transaksi</h2>
+    <div class="tabel-bungkus">
+      <table>
+        <thead>
+          <tr><th>No. pesanan</th><th>Tanggal</th><th>Pemesan</th><th>Status</th><th>Total</th></tr>
+        </thead>
+        <tbody id="tabel-transaksi"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>Panel admin Kopi Tenan</span>
+      <a href="index.html">Lihat website</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

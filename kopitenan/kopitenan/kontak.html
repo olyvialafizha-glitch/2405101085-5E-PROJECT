@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak dan Lokasi | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="kontak">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html" class="aktif">Kontak</a>
+        <a href="status.html">Cek Pesanan</a>
+        <a href="keranjang.html">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Kontak dan Lokasi</h1>
+
+    <div class="dua-kolom">
+      <div class="panel">
+        <h2>Datang langsung</h2>
+        <p id="kontak-alamat"></p>
+        <p>Jam buka: <span id="kontak-jam"></span></p>
+        <a class="tombol" id="tautan-peta" href="#" target="_blank" rel="noopener">Buka di Google Maps</a>
+      </div>
+      <div class="panel">
+        <h2>Hubungi kami</h2>
+        <p>Mau tanya menu, pesan tempat untuk rombongan, atau pesanan yang belum ada kabar? Kirim pesan saja.</p>
+        <p>
+          <a class="tombol" id="tautan-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="tombol-garis" id="tautan-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

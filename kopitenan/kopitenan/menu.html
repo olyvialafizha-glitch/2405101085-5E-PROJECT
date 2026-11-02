@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="menu">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="index.html" class="logo">Kopi Tenan</a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html" class="aktif">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="status.html">Cek Pesanan</a>
+        <a href="keranjang.html">Keranjang (<span id="jml-keranjang">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Daftar Menu</h1>
+    <p class="catatan">Beberapa minuman bisa dipesan ukuran Besar, tambah Rp3.000.</p>
+
+    <div class="bar-cari">
+      <input type="search" id="cari" placeholder="Cari nama menu">
+      <div class="chips">
+        <button class="chip aktif" data-kategori="Semua">Semua</button>
+        <button class="chip" data-kategori="Kopi">Kopi</button>
+        <button class="chip" data-kategori="Non-Kopi">Non-Kopi</button>
+        <button class="chip" data-kategori="Makanan">Makanan</button>
+        <button class="chip" data-kategori="Camilan">Camilan</button>
+      </div>
+    </div>
+
+    <div class="grid-menu" id="daftar-menu"></div>
+    <p id="menu-kosong" hidden>Menu yang dicari tidak ketemu. Coba kata lain.</p>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>&copy; 2026 Kopi Tenan</span>
+      <span>Ada pertanyaan? Lihat halaman <a href="kontak.html">kontak</a>.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/pelanggan.js"></script>
+</body>
+</html>

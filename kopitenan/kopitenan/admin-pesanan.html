@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelola Pesanan | Kopi Tenan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="admin-pesanan">
+
+  <header class="atas">
+    <div class="atas-isi">
+      <a href="admin-dashboard.html" class="logo">Kopi Tenan <small>admin</small></a>
+      <nav>
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-menu.html">Menu</a>
+        <a href="admin-pesanan.html" class="aktif">Pesanan</a>
+        <a href="admin-laporan.html">Laporan</a>
+        <a href="admin-info.html">Info</a>
+        <a href="#" id="keluar">Keluar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Kelola Pesanan</h1>
+    <p class="catatan">Ubah status lewat menu di tiap pesanan. Perubahan langsung tersimpan.</p>
+    <div id="daftar-pesanan"></div>
+  </main>
+
+  <footer class="bawah">
+    <div class="bawah-isi">
+      <span>Panel admin Kopi Tenan</span>
+      <a href="index.html">Lihat website</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/umum.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
